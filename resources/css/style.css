@@ -2,7 +2,9 @@
 html {
   font-size: 18px;
   line-height: 1.4;
+  font-family: Helvetica;
 }
+
 .siteContainer {
   width: 960px;
 }
@@ -106,6 +108,7 @@ header a {
   .mainBanner{
     height: 17rem;
     background-size: cover;
+    background-position: 20%;
     width: 100%;
 
   }
@@ -136,4 +139,151 @@ header a {
     text-align: center;
   }
 
+}
+
+/*iconsAndServices laptop view*/
+.mainContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.iconsAndServices {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.exams, .fittings, .delivery {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.exams img {
+  width: 3.5rem;
+  height: auto;
+}
+.fittings img {
+  width: 5rem;
+  height: auto;
+}
+.fittings {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.delivery img {
+  width: 5rem;
+  height: auto;
+}
+
+/*iconsAndServices mobile view*/
+@media only screen and (max-width: 470px) {
+  .iconsAndServices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 3.77rem;
+    padding-bottom: 3.77rem;
+  }
+  .exams, .fittings, .delivery  {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.77rem;
+  }
+  .fittings img {
+    padding-bottom: 1.54rem;
+  }
+  .fittings {
+    margin-top: 1.54rem;
+    margin-bottom: 1.54rem;
+    height: auto;
+  }
+
+  .delivery img {
+    padding-bottom: 1.54rem;
+  }
+
+  .delivery {
+    height: auto;
+  }
+}
+
+/*aboutCompany laptop view*/
+.aboutCompany {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.4;
+}
+.appointments, .philosophy{
+  width: 35%;
+}
+.philosophy {
+  padding-right: 5%;
+}
+.appointments h4, .philosophy h4 {
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/*aboutCompany mobile view*/
+@media only screen and (max-width: 470px) {
+  .aboutCompany {
+    flex-direction: column;
+  }
+  .appointments, .philosophy {
+    width: 100%;
+  }
+  .philosophy {
+    padding-right: 0;
+    padding-bottom: 4rem;
+  }
+  .appointments h4, .philosophy h4  {
+    width: 100%;
+  }
+  .appointments p, .philosophy p  {
+    font-size: 0.77rem;
+  }
+}
+/*footer laptop view*/
+footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5rem;
+  background-color: azure;
+  padding: 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+/*footer tablet view*/
+@media only screen and (max-width: 1024px) {
+  footer {
+    margin-bottom: 4rem;
+  }
+}
+
+/*footer mobile view*/
+@media only screen and (max-width: 470px) {
+  footer p {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
